@@ -4,3 +4,4 @@
 
 var canvas = document.getElementById("sample-image");
 var context = canvas.getContext("2d")
+context.strokeRect ( left, top, width, height )
