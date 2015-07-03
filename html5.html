@@ -1,0 +1,162 @@
+<!--Indicate that the document is written in HTML5.
+    HTML5 is backward compatible with previous HTML or/and XHTML  versions
+    thus the DOCTYPE syntax. Ideally there's no need to put version numbers
+    because of subsequent HTML versions
+    Indicating the doctype allows for doctype switching-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!--Define the character encoding in order to ensure the server sends the -->
+    <!--correct "Content Type" header-->
+    <meta charset="UTF-8">
+    <title>Kangalia.GitHub.io by Kangalia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"
+          media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css"
+          media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css"
+          media="screen">
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">HTML5 FOR WEB DESIGNERS</h1>
+
+    <h2 class="project-tagline"></h2>
+</section>
+
+<section class="main-content">
+    <h1>1. HISTORY OF HTML</h1>
+    <ul>
+        <li> HTML was the brainchild of Sir Tim, getting its origins
+            from the Standard Generalized Markup Language (SGML).
+        </li>
+        <li> The first official specification was published by the
+            Internet Engineering Task Force was HTML 2.0. The role
+            of the IETF was superceded by the
+            <strong>W3Consortium</strong>, which published the HTML
+            4.01.
+        </li>
+        <li> The next revision was <strong>XHTML 1.0 (extensible
+            HTML)</strong> (The XHTML only allowed for tags to be
+            written in small letters. There was browser support for
+            CSS).
+        </li>
+        <li> Then there was XHTML 1.1 which couldn’t be served with
+            a mime-type of text/html. Later, there was XHTML 2.0
+            which was not backward compatible with current content
+            then
+        </li>
+        <li> As an aggressive rebellion against this principle of
+            strictness, the <strong>Web Hypertext Application
+                Technology Working Group</strong> (WHATWG)
+            championed the creation of what is now HTML5.
+        </li>
+        <li> The WHATWG is creating an HTML5 specification using its
+            process of "commit then review", while the W3C HTML
+            Working Group is taking that specification and putting
+            it through its process of "review then commit".
+        </li>
+    </ul>
+
+    <h1>2. DESIGN PRINCIPLES OF HTML5</h1>
+
+    <h2>THE DESIGN PRINCIPLES</h2>
+    <ul>
+        <li>HTML5 provides support for previous content</li>
+        <li>Do not reinvent the wheel</li>
+        <li>Pave the cowpaths. "If it is not broken, do not fix it"</li>
+    </ul>
+    <h2>SIMPLICITY</h2>
+    <ul>
+        <li>Unlike in other previous versions of HTML and XHTML declaring
+            the document type is easy:
+            <pre>!DOCTYPE html</pre>
+            This allows for backward compatibility with browsers that
+            support previous versions of HTML and XHTML
+        </li>
+        <li>In defining the character encoding in HTML5, you do it as so:
+            <pre>meta charset="UTF-8"</pre>
+            in order to ensure the server
+            sends the correct <strong>Content Type</strong> header.
+        </li>
+        <li>In defining the "script" you do so as without adding the
+            <pre>type="text/javascript"</pre>
+            statement in the opening "script"
+            tag
+        </li>
+        <li>Same goes for the stylesheet where you don't need to put the
+            <pre>type="text/css"</pre>
+            statement in the opening "link"
+            tag
+        </li>
+    </ul>
+    <h2>OBSOLETE AND DEPRECATED ELEMENTS AND ATTRIBUTES</h2>
+    <ul>
+        <li><strong>DEPRECATED</strong> means no longer used, while
+            <strong>OBSOLETE</strong> means it's not used in modern browsers
+            but is used anyway for the sake of older browsers
+        </li>
+        <li>Some of the obsolete elements include: <strong>frame</strong>,
+            <strong>frameset</strong>, <strong>noframes</strong> and <strong>
+                acronym</strong>.
+        </li>
+        <li>Presentational elements such as <strong>font</strong>, <strong>
+            big</strong>, <strong>center</strong> and <strong>strike</strong>
+            are
+            also obsolete
+        </li>
+        <li>Similarly, presentational attributes such as <strong>bgcolor
+        </strong>, <strong>cellspacing</strong>, <strong>cellpadding
+        </strong> and <strong>valign</strong> are obsolete.
+        </li>
+        <li>The <strong>big</strong> element is obsolete but the <strong>small
+        </strong> element isn’t. This apparent inconsistency has been
+            resolved by redefining what "small" means. It no longer has the
+            presentational connotation, "render this at a small size."
+            Instead, it has the semantic value, "this is the small print,"
+            for legalese, or terms and conditions.
+        </li>
+        <li>The <strong>b</strong> element used to mean, "render this in bold".
+            Instead it is used for some text "to be stylistically offset
+            from the normal prose without conveying any extra importance".
+            If the text has any extra importance, then the
+            <strong>strong</strong> element
+            would be more appropriate. Similarly, the <strong>i</strong>
+            element no longer means "italicize." For emphasis, use
+            the <strong>em</strong> element.
+        </li>
+        <li>The <strong>cite </strong> element has been redefined in HTML5.
+            Where it previously meant "a reference to other sources", it now
+            means "the title of a work".
+        </li>
+        <li>In HTML5, you can wrap multiple elements in a single <strong>a
+        </strong> element.
+        </li>
+    </ul>
+
+    <h1><a id="kangaliagithubio" class="anchor"
+           href="https://github.com/Kangalia/Kangalia.github.io"
+           aria-hidden="true">
+        <span class="octicon octicon-link"></span>
+    </a>Kangalia.github.io
+    </h1>
+
+    <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by
+            <a href="https://pages.github.com">GitHub Pages</a> using the
+            <a href="https://github.com/jasonlong/cayman-theme">Cayman
+                theme</a> by
+            <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </span>
+    </footer>
+
+</section>
+
+
+</body>
+</html>
+

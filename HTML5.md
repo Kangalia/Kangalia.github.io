@@ -109,3 +109,18 @@ canvas cannot be represented as a tree of nodes.
 Screen readers and other assistive technology rely on having
 access to a Document Object Model to make sense of a docu-
 ment. No DOM, no access.
+
+## HTML5 SEMANTICS
+
+### EXTENSIBILITY
+
+Other markup languages allow you to invent any element you want. In XML, if 
+you want an "event" element or a "price" element, you just go right ahead and 
+create it. The downside to this freedom is that you then have to teach a 
+parser what "event" or "price" means. The advantage to HTML’s limited set
+of elements is that every user agent knows about every element. Browsers have 
+a built-in knowledge of HTML. That wouldn’t be possible if we were allowed 
+to make up element names.
+
+However, using the "class" attribute you can add more semantic value to 
+elements
