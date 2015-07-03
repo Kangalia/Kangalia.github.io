@@ -15,13 +15,9 @@
 </head>
 <body>
 <section>
+    <h1>HTML5 FOR WEB DESIGNERS</h1>
     <section>
-        <header>
-            <h1>HTML5 FOR WEB DESIGNERS</h1>
-        </header>
-    </section>
-    <section>
-        <h1>CHAPTER 1: HISTORY OF HTML</h1>
+        <h2>CHAPTER 1: HISTORY OF HTML</h2>
         <ul>
             <li> HTML was the brainchild of Sir Tim, getting its origins
                 from the Standard Generalized Markup Language (SGML).
@@ -55,9 +51,9 @@
         </ul>
     </section>
     <section>
-        <h1>CHAPTER 2: DESIGN PRINCIPLES OF HTML5</h1>
+        <h2>CHAPTER 2: DESIGN PRINCIPLES OF HTML5</h2>
         <article>
-            <h1>THE DESIGN PRINCIPLES</h1>
+            <h3>THE DESIGN PRINCIPLES</h3>
             <ul>
                 <li>HTML5 provides support for previous content</li>
                 <li>Do not reinvent the wheel</li>
@@ -66,7 +62,7 @@
             </ul>
         </article>
         <article>
-            <h1>SIMPLICITY</h1>
+            <h3>SIMPLICITY</h3>
             <ul>
                 <li>Unlike in other previous versions of HTML and XHTML
                     declaring
@@ -95,7 +91,7 @@
             </ul>
         </article>
         <article>
-            <h1>OBSOLETE AND DEPRECATED ELEMENTS AND ATTRIBUTES</h1>
+            <h3>OBSOLETE AND DEPRECATED ELEMENTS AND ATTRIBUTES</h3>
             <ul>
                 <li><strong>DEPRECATED</strong> means no longer used, while
                     <strong>OBSOLETE</strong> means it's not used in modern
@@ -158,10 +154,10 @@
 
     <section>
         <header>
-            <h1>CHAPTER 3: RICH MEDIA</h1>
+            <h2>CHAPTER 3: RICH MEDIA</h2>
         </header>
         <section>
-            <h1>THE CANVAS, VIDEO & AUDIO ELEMENTS</h1>
+            <h3>THE CANVAS, VIDEO & AUDIO ELEMENTS</h3>
             <ul>
                 <li>
                     In HTML5, instead of installing a plugin on the browser you
@@ -218,12 +214,12 @@
     </section>
     <section>
         <header>
-            <h1>CHAPTER 4: WEB FORMS</h1>
+            <h2>CHAPTER 4: WEB FORMS</h2>
         </header>
         <section>
             <header>
-                <h1>The <em>"Placeholder"</em>, <em>"Autofocus"</em> and
-                    <em>"Required"</em> Attributes</h1>
+                <h3>The <em>"Placeholder"</em>, <em>"Autofocus"</em> and
+                    <em>"Required"</em> Attributes</h3>
             </header>
             <form action="dummy.html" autocomplete="off">
                 <label>Name: </label>
@@ -238,7 +234,7 @@
         </section>
         <section>
             <header>
-                <h1>THE DATALIST</h1>
+                <h3>THE DATALIST</h3>
             </header>
             <ul>
                 <li>
@@ -249,92 +245,20 @@
                     associate a list of options with an input field
                 </li>
             </ul>
-            <section>
-                <form action="dummy.html" autocomplete="off">
-                    <label>Name: </label>
-                    <input type="text" name="name" placeholder="Your Name"
-                           autofocus
-                           required>
-                    <br/>
-                    <label>Password: </label>
-                    <input type="password" name="pass" placeholder="Password"
-                           required>
-                    <br/>
-                    <label for="subjects">Select Subjects: </label>
-                    <input type="text" name="subjects" id="subjects"
-                           list="subject">
-                    <datalist id="subject">
-                        <option value="Math">
-                        <option value="English">
-                        <option value="Swahili">
-                        <option value="Biology">
-                        <option value="Physics">
-                        <option value="Chemistry">
-                    </datalist>
-                    <br/>
-                    <input type="button" value="Submit">
-                </form>
-            </section>
-        </section>
-    </section>
-
-    <section>
-        <header>
-            <h1>THE INPUT TYPES AND PATTERNS</h1>
-        </header>
-        <ul>
-            <li>
-                HTML5 provides support for various input types such as
-                <strong>text</strong>, <strong>password</strong>, <strong>url
-            </strong>, <strong>search</strong>, <strong>email</strong>,
-                <strong>tel
-                </strong>, <strong>range</strong>, <strong>number</strong>,
-                <strong>date
-                </strong> and<strong>color</strong>.
-            </li>
-            <li>There is also support for Patterns</li>
-        </ul>
-        <section>
             <form action="dummy.html" autocomplete="off">
-                <label for="first-name">First Name: </label>
-                <input id="first-name" type="text" name="name"
-                       placeholder="Your Name"
-                       autofocus>
-                <br/>
-                <label for="second-name">Second Name: </label>
-                <input id="second-name" type="text" name="name"
-                       placeholder="Your Name"
+                <label>Name: </label>
+                <input type="text" name="name" placeholder="Your Name"
+                       autofocus
                        required>
                 <br/>
-                <label for="password">Password: </label>
-                <input id="password" type="password" name="pass"
-                       placeholder="Password"
+                <label>Password: </label>
+                <input type="password" name="pass" placeholder="Password"
                        required>
                 <br/>
-                <label for="website">You website:</label>
-                <input id="website" type="url">
-                <br/>
-                <label for="email">You email address:</label>
-                <input id="email" type="email">
-                <br/>
-                <label for="telephone">You website</label>
-                <input id="telephone" type="tel">
-                <br/>
-                <label for="amount">You Amount</label>
-                <input id="amount" type="range">
-                <br/>
-                <label for="date">Date of Birth</label>
-                <input id="date" type="date">
-                <br/>
-                <label for="number">A Number</label>
-                <input id="number" type="number">
-                <br/>
-                <label for="color">A color</label>
-                <input id="color" type="color">
-                <br/>
-                <label for="lessons">Select Subjects: </label>
-                <input type="text" name="lessons" id="lessons" list="lesson">
-                <datalist id="lesson">
+                <label for="subjects">Select Subjects: </label>
+                <input type="text" name="subjects" id="subjects"
+                       list="subject">
+                <datalist id="subject">
                     <option value="Math">
                     <option value="English">
                     <option value="Swahili">
@@ -350,12 +274,80 @@
 
     <section>
         <header>
-            <h1>CHAPTER 5: SEMANTICS</h1>
+            <h3>THE INPUT TYPES AND PATTERNS</h3>
+        </header>
+        <ul>
+            <li>
+                HTML5 provides support for various input types such as
+                <strong>text</strong>, <strong>password</strong>, <strong>url
+            </strong>, <strong>search</strong>, <strong>email</strong>,
+                <strong>tel
+                </strong>, <strong>range</strong>, <strong>number</strong>,
+                <strong>date
+                </strong> and<strong>color</strong>.
+            </li>
+            <li>There is also support for Patterns</li>
+        </ul>
+        <form action="dummy.html" autocomplete="off">
+            <label for="first-name">First Name: </label>
+            <input id="first-name" type="text" name="name"
+                   placeholder="Your Name"
+                   autofocus>
+            <br/>
+            <label for="second-name">Second Name: </label>
+            <input id="second-name" type="text" name="name"
+                   placeholder="Your Name"
+                   required>
+            <br/>
+            <label for="password">Password: </label>
+            <input id="password" type="password" name="pass"
+                   placeholder="Password"
+                   required>
+            <br/>
+            <label for="website">You website:</label>
+            <input id="website" type="url">
+            <br/>
+            <label for="email">You email address:</label>
+            <input id="email" type="email">
+            <br/>
+            <label for="telephone">You website</label>
+            <input id="telephone" type="tel">
+            <br/>
+            <label for="amount">You Amount</label>
+            <input id="amount" type="range">
+            <br/>
+            <label for="date">Date of Birth</label>
+            <input id="date" type="date">
+            <br/>
+            <label for="number">A Number</label>
+            <input id="number" type="number">
+            <br/>
+            <label for="color">A color</label>
+            <input id="color" type="color">
+            <br/>
+            <label for="lessons">Select Subjects: </label>
+            <input type="text" name="lessons" id="lessons" list="lesson">
+            <datalist id="lesson">
+                <option value="Math">
+                <option value="English">
+                <option value="Swahili">
+                <option value="Biology">
+                <option value="Physics">
+                <option value="Chemistry">
+            </datalist>
+            <br/>
+            <input type="button" value="Submit">
+        </form>
+    </section>
+
+    <section>
+        <header>
+            <h2>CHAPTER 5: SEMANTICS</h2>
         </header>
         <section>
             <header>
-                <h1>EXTENSIBILITY, NEW ELEMENTS, STRUCTURE AND CONTENT
-                    MODELS</h1>
+                <h2>EXTENSIBILITY, NEW ELEMENTS, STRUCTURE AND CONTENT
+                    MODELS</h2>
             </header>
             <ul>
                 <li>
