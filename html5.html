@@ -14,267 +14,493 @@
     <title>HTML5 FOR WEB DESIGNERS</title>
 </head>
 <body>
-<h1>HTML5 FOR WEB DESIGNERS</h1>
+<section>
+    <section>
+        <header>
+            <h1>HTML5 FOR WEB DESIGNERS</h1>
+        </header>
+    </section>
+    <section>
+        <h1>CHAPTER 1: HISTORY OF HTML</h1>
+        <ul>
+            <li> HTML was the brainchild of Sir Tim, getting its origins
+                from the Standard Generalized Markup Language (SGML).
+            </li>
+            <li> The first official specification was published by the
+                Internet Engineering Task Force was HTML 2.0. The role
+                of the IETF was superceded by the
+                <strong>W3Consortium</strong>, which published the HTML
+                4.01.
+            </li>
+            <li> The next revision was <strong>XHTML 1.0 (extensible
+                HTML)</strong> (The XHTML only allowed for tags to be
+                written in small letters. There was browser support for
+                CSS).
+            </li>
+            <li> Then there was XHTML 1.1 which couldn’t be served with
+                a mime-type of text/html. Later, there was XHTML 2.0
+                which was not backward compatible with current content
+                then
+            </li>
+            <li> As an aggressive rebellion against this principle of
+                strictness, the <strong>Web Hypertext Application
+                    Technology Working Group</strong> (WHATWG)
+                championed the creation of what is now HTML5.
+            </li>
+            <li> The WHATWG is creating an HTML5 specification using its
+                process of "commit then review", while the W3C HTML
+                Working Group is taking that specification and putting
+                it through its process of "review then commit".
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h1>CHAPTER 2: DESIGN PRINCIPLES OF HTML5</h1>
+        <article>
+            <h1>THE DESIGN PRINCIPLES</h1>
+            <ul>
+                <li>HTML5 provides support for previous content</li>
+                <li>Do not reinvent the wheel</li>
+                <li>Pave the cowpaths. "If it is not broken, do not fix it"
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h1>SIMPLICITY</h1>
+            <ul>
+                <li>Unlike in other previous versions of HTML and XHTML
+                    declaring
+                    the document type is easy:
+                    <pre>!DOCTYPE html</pre>
+                    This allows for backward compatibility with browsers that
+                    support previous versions of HTML and XHTML
+                </li>
+                <li>In defining the character encoding in HTML5, you do it as
+                    so:
+                    <pre>meta charset="UTF-8"</pre>
+                    in order to ensure the server
+                    sends the correct <strong>Content Type</strong> header.
+                </li>
+                <li>In defining the "script" you do so as without adding the
+                    <pre>type="text/javascript"</pre>
+                    statement in the opening "script"
+                    tag
+                </li>
+                <li>Same goes for the stylesheet where you don't need to put
+                    the
+                    <pre>type="text/css"</pre>
+                    statement in the opening "link"
+                    tag
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h1>OBSOLETE AND DEPRECATED ELEMENTS AND ATTRIBUTES</h1>
+            <ul>
+                <li><strong>DEPRECATED</strong> means no longer used, while
+                    <strong>OBSOLETE</strong> means it's not used in modern
+                    browsers
+                    but is used anyway for the sake of older browsers
+                </li>
+                <li>Some of the obsolete elements include:
+                    <strong>frame</strong>,
+                    <strong>frameset</strong>, <strong>noframes</strong> and
+                    <strong>
+                        acronym</strong>.
+                </li>
+                <li>Presentational elements such as <strong>font</strong>,
+                    <strong>
+                        big</strong>, <strong>center</strong> and <strong>strike</strong>
+                    are
+                    also obsolete
+                </li>
+                <li>Similarly, presentational attributes such as <strong>bgcolor
+                </strong>, <strong>cellspacing</strong>, <strong>cellpadding
+                </strong> and <strong>valign</strong> are obsolete.
+                </li>
+                <li>The <strong>big</strong> element is obsolete but the
+                    <strong>small
+                    </strong> element isn’t. This apparent inconsistency has
+                    been
+                    resolved by redefining what "small" means. It no longer has
+                    the
+                    presentational connotation, "render this at a small size."
+                    Instead, it has the semantic value, "this is the small
+                    print,"
+                    for legalese, or terms and conditions.
+                </li>
+                <li>The <strong>b</strong> element used to mean, "render this
+                    in bold".
+                    Instead it is used for some text "to be stylistically
+                    offset
+                    from the normal prose without conveying any extra
+                    importance".
+                    If the text has any extra importance, then the
+                    <strong>strong</strong> element
+                    would be more appropriate. Similarly, the
+                    <strong>i</strong>
+                    element no longer means "italicize." For emphasis, use
+                    the <strong>em</strong> element.
+                </li>
+                <li>The <strong>cite </strong> element has been redefined in
+                    HTML5.
+                    Where it previously meant "a reference to other sources",
+                    it now
+                    means "the title of a work".
+                </li>
+                <li>In HTML5, you can wrap multiple elements in a single
+                    <strong>a
+                    </strong> element.
+                </li>
+            </ul>
+        </article>
+    </section>
 
-<h1>CHAPTER 1: HISTORY OF HTML</h1>
-<ul>
-    <li> HTML was the brainchild of Sir Tim, getting its origins
-        from the Standard Generalized Markup Language (SGML).
-    </li>
-    <li> The first official specification was published by the
-        Internet Engineering Task Force was HTML 2.0. The role
-        of the IETF was superceded by the
-        <strong>W3Consortium</strong>, which published the HTML
-        4.01.
-    </li>
-    <li> The next revision was <strong>XHTML 1.0 (extensible
-        HTML)</strong> (The XHTML only allowed for tags to be
-        written in small letters. There was browser support for
-        CSS).
-    </li>
-    <li> Then there was XHTML 1.1 which couldn’t be served with
-        a mime-type of text/html. Later, there was XHTML 2.0
-        which was not backward compatible with current content
-        then
-    </li>
-    <li> As an aggressive rebellion against this principle of
-        strictness, the <strong>Web Hypertext Application
-            Technology Working Group</strong> (WHATWG)
-        championed the creation of what is now HTML5.
-    </li>
-    <li> The WHATWG is creating an HTML5 specification using its
-        process of "commit then review", while the W3C HTML
-        Working Group is taking that specification and putting
-        it through its process of "review then commit".
-    </li>
-</ul>
-
-<h1>CHAPTER 2: DESIGN PRINCIPLES OF HTML5</h1>
-
-<h2>THE DESIGN PRINCIPLES</h2>
-<ul>
-    <li>HTML5 provides support for previous content</li>
-    <li>Do not reinvent the wheel</li>
-    <li>Pave the cowpaths. "If it is not broken, do not fix it"</li>
-</ul>
-<h2>SIMPLICITY</h2>
-<ul>
-    <li>Unlike in other previous versions of HTML and XHTML declaring
-        the document type is easy:
-        <pre>!DOCTYPE html</pre>
-        This allows for backward compatibility with browsers that
-        support previous versions of HTML and XHTML
-    </li>
-    <li>In defining the character encoding in HTML5, you do it as so:
-        <pre>meta charset="UTF-8"</pre>
-        in order to ensure the server
-        sends the correct <strong>Content Type</strong> header.
-    </li>
-    <li>In defining the "script" you do so as without adding the
-        <pre>type="text/javascript"</pre>
-        statement in the opening "script"
-        tag
-    </li>
-    <li>Same goes for the stylesheet where you don't need to put the
-        <pre>type="text/css"</pre>
-        statement in the opening "link"
-        tag
-    </li>
-</ul>
-<h2>OBSOLETE AND DEPRECATED ELEMENTS AND ATTRIBUTES</h2>
-<ul>
-    <li><strong>DEPRECATED</strong> means no longer used, while
-        <strong>OBSOLETE</strong> means it's not used in modern browsers
-        but is used anyway for the sake of older browsers
-    </li>
-    <li>Some of the obsolete elements include: <strong>frame</strong>,
-        <strong>frameset</strong>, <strong>noframes</strong> and <strong>
-            acronym</strong>.
-    </li>
-    <li>Presentational elements such as <strong>font</strong>, <strong>
-        big</strong>, <strong>center</strong> and <strong>strike</strong>
-        are
-        also obsolete
-    </li>
-    <li>Similarly, presentational attributes such as <strong>bgcolor
-    </strong>, <strong>cellspacing</strong>, <strong>cellpadding
-    </strong> and <strong>valign</strong> are obsolete.
-    </li>
-    <li>The <strong>big</strong> element is obsolete but the <strong>small
-    </strong> element isn’t. This apparent inconsistency has been
-        resolved by redefining what "small" means. It no longer has the
-        presentational connotation, "render this at a small size."
-        Instead, it has the semantic value, "this is the small print,"
-        for legalese, or terms and conditions.
-    </li>
-    <li>The <strong>b</strong> element used to mean, "render this in bold".
-        Instead it is used for some text "to be stylistically offset
-        from the normal prose without conveying any extra importance".
-        If the text has any extra importance, then the
-        <strong>strong</strong> element
-        would be more appropriate. Similarly, the <strong>i</strong>
-        element no longer means "italicize." For emphasis, use
-        the <strong>em</strong> element.
-    </li>
-    <li>The <strong>cite </strong> element has been redefined in HTML5.
-        Where it previously meant "a reference to other sources", it now
-        means "the title of a work".
-    </li>
-    <li>In HTML5, you can wrap multiple elements in a single <strong>a
-    </strong> element.
-    </li>
-</ul>
-
-<h1>CHAPTER 3: RICH MEDIA</h1>
-
-<h2>THE CANVAS, VIDEO & AUDIO ELEMENTS</h2>
-<ul>
-    <li>
-        In HTML5, instead of installing a plugin on the browser you can
-        use <strong>"canvas"</strong> element to create dynamic images.
-        This means that contents within the "canvas" tags are updated
-        based on user actions. Create a canvas and define the dimensions
-        and give it an id which will be used by JScript to reference the
-        it and its context (the context being the dimensional view of
-        the image):
+    <section>
+        <header>
+            <h1>CHAPTER 3: RICH MEDIA</h1>
+        </header>
+        <section>
+            <h1>THE CANVAS, VIDEO & AUDIO ELEMENTS</h1>
+            <ul>
+                <li>
+                    In HTML5, instead of installing a plugin on the browser you
+                    can
+                    use <strong>"canvas"</strong> element to create dynamic
+                    images.
+                    This means that contents within the "canvas" tags are
+                    updated
+                    based on user actions. Create a canvas and define the
+                    dimensions
+                    and give it an id which will be used by JScript to
+                    reference the
+                    it and its context (the context being the dimensional view
+                    of
+                    the image):
             <pre>
                 Sample Image Without Canvas
                 <img src="31b89e34659297d06133f2cceeaef4fc.jpg"
                      alt="Sample Image">
                 Sample Image Within the Canvas
                 <canvas id="sample-image" style="border: 1px dashed black">
-                    <img src="31b89e34659297d06133f2cceeaef4fc.jpg">
+                    <img src="31b89e34659297d06133f2cceeaef4fc.jpg"
+                         alt="Sample Image">
                 </canvas>
             </pre>
-    </li>
-    <li>
-        However, since every document on the web is described by a
-        Document Object Model, which has some important nodes such as
-        the <strong>element</strong>, <strong>text</strong> and
-        <strong>attribute</strong> nodes, and since the canvas has no
-        DOM, the contents within it cannot be accessed i.e. are not
-        visible.
-    </li>
-    <li>The "Audio" element
+                </li>
+                <li>
+                    However, since every document on the web is described by a
+                    Document Object Model, which has some important nodes such
+                    as
+                    the <strong>element</strong>, <strong>text</strong> and
+                    <strong>attribute</strong> nodes, and since the canvas has
+                    no
+                    DOM, the contents within it cannot be accessed i.e. are not
+                    visible.
+                </li>
+                <li>The "Audio" element
             <pre>
                 Sample Audio File
-                <audio src="Afire_Love.mp3" controls autoplay></audio>
+                <audio src="Afire_Love.mp3" controls></audio>
                 The controls and their functionality can be extended using
                 javascript
             </pre>
-    </li>
-    <li>The "Video" element
-            <pre>
-                <p>Sample Video File</p>
+                </li>
+                <li>The "Video" element
+            <pre>Sample Video File
                 <video
                         src="Alesso%20-%20Heroes%20(we%20could%20be)%20ft.%20Tove%20Lo.mp4"
-                        controls width="360" height="240" autoplay></video>
+                        controls width="360" height="240"></video>
             </pre>
-    </li>
-</ul>
-<h1>CHAPTER 4: WEB FORMS</h1>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section>
+        <header>
+            <h1>CHAPTER 4: WEB FORMS</h1>
+        </header>
+        <section>
+            <header>
+                <h1>The <em>"Placeholder"</em>, <em>"Autofocus"</em> and
+                    <em>"Required"</em> Attributes</h1>
+            </header>
+            <form action="dummy.html" autocomplete="off">
+                <label>Name: </label>
+                <input type="text" name="name" placeholder="Your Name"
+                       autofocus>
+                <br/>
+                <label>Password: </label>
+                <input type="password" name="pass" placeholder="Password"
+                       required>
+                <input type="button" value="Submit">
+            </form>
+        </section>
+        <section>
+            <header>
+                <h1>THE DATALIST</h1>
+            </header>
+            <ul>
+                <li>
+                    The new "datalist" element allows you to crossbreed a
+                    regular input
+                    element with a select element. Using the list attribute,
+                    you can
+                    associate a list of options with an input field
+                </li>
+            </ul>
+            <section>
+                <form action="dummy.html" autocomplete="off">
+                    <label>Name: </label>
+                    <input type="text" name="name" placeholder="Your Name"
+                           autofocus
+                           required>
+                    <br/>
+                    <label>Password: </label>
+                    <input type="password" name="pass" placeholder="Password"
+                           required>
+                    <br/>
+                    <label for="subjects">Select Subjects: </label>
+                    <input type="text" name="subjects" id="subjects"
+                           list="subject">
+                    <datalist id="subject">
+                        <option value="Math">
+                        <option value="English">
+                        <option value="Swahili">
+                        <option value="Biology">
+                        <option value="Physics">
+                        <option value="Chemistry">
+                    </datalist>
+                    <br/>
+                    <input type="button" value="Submit">
+                </form>
+            </section>
+        </section>
+    </section>
 
-<h2>The <em>"Placeholder"</em>, <em>"Autofocus"</em> and
-    <em>"Required"</em> Attributes</h2>
-<form action="dummy.html" autocomplete="off">
-    <label>Name: </label>
-    <input type="text" name="name" placeholder="Your Name" autofocus required>
-    <br />
-    <label>Password: </label>
-    <input type="password" name="pass" placeholder="Password" required>
-    <input type="button" value="Submit">
-</form>
+    <section>
+        <header>
+            <h1>THE INPUT TYPES AND PATTERNS</h1>
+        </header>
+        <ul>
+            <li>
+                HTML5 provides support for various input types such as
+                <strong>text</strong>, <strong>password</strong>, <strong>url
+            </strong>, <strong>search</strong>, <strong>email</strong>,
+                <strong>tel
+                </strong>, <strong>range</strong>, <strong>number</strong>,
+                <strong>date
+                </strong> and<strong>color</strong>.
+            </li>
+            <li>There is also support for Patterns</li>
+        </ul>
+        <section>
+            <form action="dummy.html" autocomplete="off">
+                <label for="first-name">First Name: </label>
+                <input id="first-name" type="text" name="name"
+                       placeholder="Your Name"
+                       autofocus>
+                <br/>
+                <label for="second-name">Second Name: </label>
+                <input id="second-name" type="text" name="name"
+                       placeholder="Your Name"
+                       required>
+                <br/>
+                <label for="password">Password: </label>
+                <input id="password" type="password" name="pass"
+                       placeholder="Password"
+                       required>
+                <br/>
+                <label for="website">You website:</label>
+                <input id="website" type="url">
+                <br/>
+                <label for="email">You email address:</label>
+                <input id="email" type="email">
+                <br/>
+                <label for="telephone">You website</label>
+                <input id="telephone" type="tel">
+                <br/>
+                <label for="amount">You Amount</label>
+                <input id="amount" type="range">
+                <br/>
+                <label for="date">Date of Birth</label>
+                <input id="date" type="date">
+                <br/>
+                <label for="number">A Number</label>
+                <input id="number" type="number">
+                <br/>
+                <label for="color">A color</label>
+                <input id="color" type="color">
+                <br/>
+                <label for="lessons">Select Subjects: </label>
+                <input type="text" name="lessons" id="lessons" list="lesson">
+                <datalist id="lesson">
+                    <option value="Math">
+                    <option value="English">
+                    <option value="Swahili">
+                    <option value="Biology">
+                    <option value="Physics">
+                    <option value="Chemistry">
+                </datalist>
+                <br/>
+                <input type="button" value="Submit">
+            </form>
+        </section>
+    </section>
 
-<h2>THE DATALIST</h2>
-<ul>
-    <li>
-        The new "datalist" element allows you to crossbreed a regular input
-        element with a select element. Using the list attribute, you can
-        associate a list of options with an input field
-    </li>
-</ul>
+    <section>
+        <header>
+            <h1>CHAPTER 5: SEMANTICS</h1>
+        </header>
+        <section>
+            <header>
+                <h1>EXTENSIBILITY, NEW ELEMENTS, STRUCTURE AND CONTENT
+                    MODELS</h1>
+            </header>
+            <ul>
+                <li>
+                    Elements in HTML5 can be extended using the "class"
+                    attribute
+                    This is similar to RDFa's microformats (microformats are
+                    conventions
+                    which have been unanimously agreed upon by the community)
+        <pre>
+            Extensibility semantic in HTML5
+            <code>h1 class="summary"</code>
+        </pre>
+        <pre>
+            Extensibility semantic in RDFa
+            <code>h1 property="myformat:summary"</code>
+        </pre>
+                </li>
+                <li>
+                    Some new text-level semantics have also been added to vast
+                    collection of span , strong , em , abbr , etc
+                    <br/>
+                    1. Mark - for highlighting
+                    <br/>
+                    My name is
+                    <mark>Isaac Kang'alia</mark>
+                    <br/>
+                    2. Time - used for both dates and times
+                    <br/>
+                    <time class="dtstart" datetime="1992-01-12">
+                        January 12th, 1992
+                    </time>
+                    <br/>
+                    3. Meter - can be used to mark up measurements, provided
+                    that those
+                    measurements are part of a scale with minimum and maximum
+                    values.
+                    <br/>
+                    9 out of 10 cats
+                    <meter>9 out of 10 cats</meter>
+                    <br/>
+                    4. Progress - allows you to mark up a value that is in the
+                    process
+                    of changing. You can add min max and value attributes to
+                    the
+                    opening
+                    progress element if you like
+                    <br/>
+                    Your profile is
+                    <progress min="0" max="100" value="60">60%</progress>
+                    complete.
+                    Your profile is
+                    <progress min="0" max="100">60%</progress>
+                    complete.
+                    <br/>
+                </li>
+                <li>
+                    The section element is used for grouping together
+                    thematically-related content. While the div has no semantic
+                    meaning, i.e. it is simply a generic container, a section
+                    is used
+                    explicitly for grouping related content.
+                </li>
+                <li>
+                    The header element is a container for content in the
+                    masthead. This
+                    means that there is only one masthead but there can be more
+                    than
+                    one
+                    header in it. You can also use the header element within a
+                    section
+                    element, for example.
+                </li>
 
-<form action="dummy.html" autocomplete="off">
-    <label>Name: </label>
-    <input type="text" name="name" placeholder="Your Name" autofocus required>
-    <br />
-    <label>Password: </label>
-    <input type="password" name="pass" placeholder="Password" required>
-    <br />
-    <label for="subjects">Select Subjects: </label>
-    <input type="text" name="subjects" id="subjects" list="subject">
-    <datalist id="subject">
-        <option value="Math">
-        <option value="English">
-        <option value="Swahili">
-        <option value="Biology">
-        <option value="Physics">
-        <option value="Chemistry">
-    </datalist>
-    <br />
-    <input type="button" value="Submit">
-</form>
+                <li>
+                    The footer element contains information about its
+                    containing
+                    element:
+                    who wrote it, copyright information, links to related
+                    content, etc.
 
-<h2>THE INPUT TYPES AND PATTERNS</h2>
-<ul>
-    <li>
-        HTML5 provides support for various input types such as
-        <strong>text</strong>, <strong>password</strong>, <strong>url
-        </strong>, <strong>search</strong>, <strong>email</strong>, <strong>tel
-        </strong>, <strong>range</strong>, <strong>number</strong>, <strong>date
-        </strong> and<strong>color</strong>.
-    </li>
-    <li>There is also support for Patterns</li>
-</ul>
-
-<form action="dummy.html" autocomplete="off">
-    <label for="first-name">First Name: </label>
-    <input id="first-name" type="text" name="name" placeholder="Your Name" autofocus
-           required>
-    <br />
-    <label for="second-name">Second Name: </label>
-    <input id="second-name" type="text" name="name" placeholder="Your Name" autofocus
-           required>
-    <br />
-    <label for="password">Password: </label>
-    <input id="password" type="password" name="pass" placeholder="Password"
-           required>
-    <br />
-    <label for="website">You website:</label>
-    <input id="website" type="url">
-    <br />
-    <label for="email">You email address:</label>
-    <input id="email" type="email">
-    <br />
-    <label for="telephone">You website</label>
-    <input id="telephone" type="tel">
-    <br />
-    <label for="amount">You Amount</label>
-    <input id="amount" type="range">
-    <br />
-    <label for="date">Date of Birth</label>
-    <input id="date" type="date">
-    <br />
-    <label for="number">A Number</label>
-    <input id="number" type="number">
-    <br />
-    <label for="color">A color</label>
-    <input id="color" type="color">
-    <br />
-    <label for="lessons">Select Subjects: </label>
-    <input type="text" name="lessons" id="lessons" list="lesson">
-    <datalist id="lesson">
-        <option value="Math">
-        <option value="English">
-        <option value="Swahili">
-        <option value="Biology">
-        <option value="Physics">
-        <option value="Chemistry">
-    </datalist>
-    <br />
-    <input type="button" value="Submit">
-</form>
-
+                    Just like header elements HTML5 allows for more than one
+                    footer
+                    within a section
+                </li>
+                <li>
+                    The aside matches the concept of a sidebar. But it’s the
+                    content
+                    that matters, not the position. The aside element should be
+                    used
+                    for
+                    tangentially related content. If you have a chunk of
+                    content that
+                    you consider to be separate from the main content, then the
+                    aside
+                    element is probably the right container for it. Pullquotes
+                    are a
+                    good example of tangentially related content; they’re nice
+                    to have,
+                    but you can remove them without affecting the comprehension
+                    of the
+                    main content.
+                </li>
+                <li>
+                    The nav element contains navigation information, usually a
+                    list of
+                    links. The nav element is intended for major navigation
+                    information
+                    such as site-wide navigation. Quite often, a nav element
+                    will
+                    appear
+                    within a header element.
+                </li>
+                <li>
+                    The article element is another specialized kind of section
+                    and is
+                    used for self-contained related content. The article
+                    element is
+                    specifically designed for syndication. If you use a time
+                    element
+                    within an article , you can add an optional pubdate Boolean
+                    attribute to indicate that it contains the date of
+                    publication. The
+                    article element is useful for blog posts, news stories,
+                    comments,
+                    reviews, and forum posts. It covers exactly the same use
+                    cases as
+                    the hAtom microformat. The article element should be used
+                    for self
+                    contained widgets: stock tickers, calculators, clocks,
+                    weather
+                    widgets, and the like.
+                </li>
+                <li>
+                    The hgroup element allows you to use heading elements
+                    without
+                    having them appear in the document outline. The blockquote
+                    ,
+                    fieldset , and td elements are all immune to the outline
+                    algorithm.
+                    These elements are called “sectioning roots”
+                </li>
+            </ul>
+        </section>
+    </section>
+</section>
 </body>
 </html>
 
