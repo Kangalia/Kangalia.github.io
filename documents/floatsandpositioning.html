@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="screen"
+          href="../stylesheets/stylesheets.css"/>
+    <title>STYLESHEETS</title>
+</head>
+<body>
+    <section class="container-fluid">
+        <header class="navbar-header">
+            <h1>Kangalia.github.io/Stylesheets/Floating and Positions</h1>
+        </header>
+        <div class="main-content">
+            <h2>Floating</h2>
+            <p>Float values include: left, right, inherit, none Floated
+                elements affect the flow of the document although they are
+                on a different plane from the rest of the document. Margins
+                around floated elements do not collapse.
+
+                It is a general rule that floated elements do not move
+                outside the inner margins of their containing elements.
+                However it is possible to implement this behaviour using
+                negative margins.
+
+                <img src="../assets/31b89e34659297d06133f2cceeaef4fc.jpg"
+                     alt="Sample of right floated image"/>
+                <h2 class="clear-example">This is an example of cleared
+                elements</h2>
+
+                Floated elements tend to overlap other content. Therefore,
+                in order to create a distinct boundary between floated element
+                and other elements you can implement a “clear” for those
+                elements so that then they are pushed to their own space on the
+                document below the floated elements. Available options for
+                “clear” include: left, right or both.
+            </p>
+        </div>
+        <div class="main-content">
+            <h2>Positioning</h2>
+            <div class="containing-block">
+                <div class="relative-element">
+                </div>
+            </div>
+            <div class="containing-block"></div>
+            <div class="containing-block"></div>
+            <div class="containing-block"></div>
+        </div>
+    </section>
+</body>
+</html>

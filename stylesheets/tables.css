@@ -1,0 +1,53 @@
+@import "../stylesheets/stylesheets.css";
+
+table {
+    display: table;
+    font-family: "lucida console";
+    color: whitesmoke;
+    border-collapse: separate; /* available options: collapse, separate and inherit*/
+    border-spacing: 0; /* spacing bet cell borders. Available options: <length><length>? | inherit*/
+    empty-cells: show; /* toggle between making empty cells visible or hidden. Available options: show, hidden, inherit */
+    table-layout: fixed;
+    text-align:  center;
+    width: 100%;
+}
+
+thead {
+    display: table-header-group;
+    background: dimgrey;
+    border: black solid 1px;
+}
+
+thead tr th {
+    display: table-cell;
+    padding: 1em 2em;
+    text-align: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    background: black;
+}
+
+tbody tr td{
+    display: table-cell;
+    padding: 1em 2em;
+    height: 5em;
+}
+
+th, td {
+    border-bottom: 1px solid white;
+}
+
+tfoot {
+    display: table-footer-group;
+}
+
+caption {
+    display: table-caption;
+    background: darkgrey;
+    margin: 1em 0;
+    caption-side: top;
+    text-align: center;
+    color: white;
+}
