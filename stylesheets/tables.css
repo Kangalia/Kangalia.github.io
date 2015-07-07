@@ -8,7 +8,7 @@ table {
     border-spacing: 0; /* spacing bet cell borders. Available options: <length><length>? | inherit*/
     empty-cells: show; /* toggle between making empty cells visible or hidden. Available options: show, hidden, inherit */
     table-layout: fixed;
-    text-align:  center;
+    text-align: center;
     width: 100%;
 }
 
@@ -24,12 +24,14 @@ thead tr th {
     text-align: inherit;
 }
 
+/* These are descendant/ contextual selectors */
+
 tbody {
     display: table-row-group;
     background: black;
 }
 
-tbody tr td{
+tbody tr td {
     display: table-cell;
     padding: 1em 2em;
     height: 5em;
