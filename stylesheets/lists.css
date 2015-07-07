@@ -1,1 +1,93 @@
 @import "../stylesheets/stylesheets.css";
+
+section.main-content ul#roman {
+    list-style-type: upper-roman;
+}
+
+section.main-content ul#none {
+    list-style-type: none;
+}
+
+section.main-content ul#image {
+    list-style-image: url("../assets/Small-arrow-right-icon.png");
+    list-style-position: inside; /*supported options: inside, outside and inherit*/
+
+}
+
+section.main-content ul li:first-child {
+    text-transform: uppercase;
+}
+
+.main-content section h3 {
+    color: darkgreen;
+}
+
+ul>li {
+    color: blue;
+}
+
+h2 {
+    display: run-in;
+}
+h3:before {
+    content: "This Text appears before the H3";
+    color: purple;
+    display: block;
+    border-bottom: dotted purple 2px;
+}
+
+h3:after {
+    content: "This text appears after the H3";
+    color: brown;
+    display: block;
+    border-top: dotted brown 2px;
+}
+
+span[class] {
+    font-weight: bold;
+}
+
+span[class~="sample"] {
+    font-style: italic;
+}
+
+span[class*="samp"] {
+    color: lawngreen;
+}
+
+/* [foo^="bar"] Selects any element with an attribute foo whose value begins with "bar" .
+[foo$="bar"] Selects any element with an attribute foo whose value ends with "bar" .
+[foo*="bar"] Selects any element with an attribute foo whose value contains the substring "bar" . */
+
+section.main-content section p a:hover {
+    font-weight: bold;
+    color: darkred;
+}
+
+section.main-content section p a:visited:active{
+    font-weight: lighter;
+    color: lightsalmon;
+}
+
+.main-content section p em {
+    color: red; !important;
+}
+
+p.one {color: rgb(0%,0%,0%);}
+p.two {color: rgb(20%,20%,20%);}
+p.three {color: rgb(40%,40%,40%);}
+
+p#extraexpanded {
+    letter-spacing:-0.25ex; /* available options normal | wider | narrower | ultra-condensed | extra-condensed |
+condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded | inherit */
+}
+p#extracondensed {
+    letter-spacing: 0.25em;
+    color: black;
+    text-shadow: 1em 1em 5px gray, -1em -1em gray;
+    direction: rtl;
+}
+
+/* The font-stretch attribute is no longer in use in CSS3 */
+/* Horizontal alignment - text-align
+   Vertical alignment - line-height, vertical-align, subscripting and superscripting,
