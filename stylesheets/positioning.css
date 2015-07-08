@@ -1,0 +1,80 @@
+@import "../bower_components/bootstrap/dist/css/bootstrap.css";
+@import "../bower_components/bootstrap/dist/css/bootstrap-theme.css";
+
+.body-content {
+    width: auto;
+    color: snow;
+}
+.navbar-header {
+    background: steelblue;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.table-bordered {
+    margin-left: 350px;
+    width: 550px;
+    border: 0;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 20px 50px;
+    margin-top: 170px;
+    color: inherit;
+}
+
+
+table {
+    empty-cells: show; /* toggle between making empty cells visible or hidden. Available options: show, hidden, inherit */
+    table-layout: fixed;
+    text-align: center;
+    width: inherit;
+}
+
+thead {
+    display: table-header-group;
+    background: dimgray;
+}
+
+thead tr th {
+    display: table-cell;
+    padding: 1em 2em;
+    text-align: inherit;
+}
+
+tbody>tr>td {
+    display: table-cell;
+    padding: 0.5em 2em;
+    color: black;
+}
+
+th, td {
+    border-bottom: 1px solid white;
+}
+
+tr:nth-child(2n) {
+    background: darkgray;
+}
+
+td:empty {
+    background: red;
+}
+
+tfoot {
+    display: table-footer-group;
+}
+
+caption {
+    display: table-caption;
+    background: darkgrey;
+    caption-side: top;
+    text-align: center;
+    color: white;
+}
