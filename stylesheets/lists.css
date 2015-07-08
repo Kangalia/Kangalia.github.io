@@ -9,7 +9,7 @@ section.main-content ul#none {
 }
 
 section.main-content ul#image {
-    list-style-image: url("../assets/Small-arrow-right-icon.png");
+    list-style-image: url("../assets/images/Small-arrow-right-icon.png");
     list-style-position: inside; /*supported options: inside, outside and inherit*/
 
 }

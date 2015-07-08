@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: lightgrey;
+    background: rgba(0, 0, 0, 1.0);
+    padding: 20px 0;
+}
+
+#main {
+    font-size: .8rem;
+    background: rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+.main-content {
+    width: 716px;
+    float: left;
+
+}
+
+.sub-content {
+    width: 308px;
+    float: left;
+}
+
+.main-content, .sub-content {
+    padding: 15px;
+}
+
+h1.sub-content-heading {
+    text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 70%;
+    }
+
+    .sub-content {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sub-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 320px;
+    }
+}
