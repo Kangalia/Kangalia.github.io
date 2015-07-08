@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: lightgrey;
+    background: rgba(0, 0, 0, 1.0);
+    padding: 20px 0;
+}
+
+#main {
+    font-size: .8rem;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.top, .bottom {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.bottom {
+    -webkit-justify-content: space-between;
+   justify-content: space-between;
+}
+
+section[id="top-left"], aside[id="top-right"], article {
+    padding: 20px;
+}
+
+.top>#top-left {
+    margin-right: 20px;
+}
+
+.top:first-child {
+    margin-bottom: 20px;
+}
+
+#top-left {
+   /* This will be twice as big as the small item. */
+   -webkit-flex: 2.055 0 0;
+   flex: 2.055 0 0;
+}
+#top-right {
+   -webkit-flex: 0.945 0 0;
+   flex: 0.945 0 0;
+}
+
+article:nth-child(2n) {
+    margin: auto 20px;
+}
