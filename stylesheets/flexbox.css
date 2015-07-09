@@ -24,6 +24,12 @@ html {
     font-size: .8rem;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .top, .bottom {
@@ -62,4 +68,64 @@ section[id="top-left"], aside[id="top-right"], article {
 
 article:nth-child(2n) {
     margin: auto 20px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 959px) {
+    .header {
+        width: 100%;
+    }
+
+    #main, .top, .bottom {
+        width: 100%;
+    }
+
+    #top-left {
+        width: 70%;
+    }
+
+    #top-right {
+        width: 30%;
+    }
+
+    article {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        width: 100%;
+    }
+
+    #main {width: 100%;}
+
+    .top, .bottom {
+        width: 100%;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: row wrap;
+       flex-flow: row wrap;
+       -webkit-align-content: space-between;
+       align-content: space-between;
+    }
+
+    #top-left {
+        width: 100%;
+    }
+
+    #top-right {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article:nth-child(2n) {
+    margin: auto 0;
+}
 }

@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../assets/fonts/josefin-sans/josefinsans-regular-webfont.eot");
+    src: url("../assets/fonts/josefin-sans/josefinsans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/josefin-sans/josefinsans-regular-webfont.woff") format('woff'),
+    url("../assets/fonts/josefin-sans/josefinsans-regular-webfont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    src: url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.eot");
+    src: url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.woff") format('woff'),
+    url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Quick Sand";
+    src: url("../assets/fonts/quicksand/quicksand_dash-webfont.eot");
+    src: url("../assets/fonts/quicksand/quicksand_dash-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/quicksand/quicksand_dash-webfont.woff") format('woff'),
+    url("../assets/fonts/quicksand/quicksand_dash-webfont.ttf") format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgba(192, 192, 192, 0.5);
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main {
+    font-family: "Josefin Sans";
+    font-size: 1rem;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div[id="row-header"] {
+    background: rgba(190, 189, 200, 0.5);
+    width: 100%;
+}
+
+div[id="col-header"] {
+    text-align: center;
+    width: inherit;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+}
+
+.grid {
+    overflow: hidden;
+    display: grid;
+}
+
+#col-2-3, #col-1-3 {
+    float: left;
+}
+
+#col-2-3 {
+    width: 66.66%;
+}
+
+#col-1-3 {
+    width: 33.33%;
+}
+
+#col-mdl-1-3, #col-md-1-3, #col-mdr-1-3 {
+    width: 33.33%;
+    float: left;
+}
+
+#col-1 {
+    width: 100%;
+}
+
+div[id*="col-"] {
+    padding: 20px;
+}
+
+@media screen and (max-width: 959px) {
+    .main {
+        width: 100%;
+    }
+    #row-header {
+        width: 100%;
+    }
+    #col-header {
+        width: 100%;
+    }
+    #col-2-3 {
+        width: 66.66%;
+    }
+    #col-1-3 {
+        width: 33.33%;
+    }
+    #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3 {
+        width: 33.33%;
+    }
+    #col-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 640px;
+    }
+    .main {
+        width: 100%;
+    }
+    #row-header, #col-header {
+        width: 100%;
+    }
+    #col-2-3, #col-1-3, #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3, #col-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+    .main {
+        width: 100%;
+    }
+    #row-header, #col-header {
+        width: 100%;
+    }
+    #col-2-3, #col-1-3, #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3, #col-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    body {
+        width: 533px;
+    }
+    .main {
+        width: 100%;
+    }
+    #row-header, #col-header {
+        width: 100%;
+    }
+    #col-2-3, #col-1-3, #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3, #col-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+    .main {
+        width: 100%;
+    }
+    #row-header, #col-header {
+        width: 100%;
+    }
+    #col-2-3, #col-1-3, #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3, #col-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        width: 360px;
+    }
+    .main {
+        width: 100%;
+    }
+    #row-header, #col-header {
+        width: 100%;
+    }
+    #col-2-3, #col-1-3, #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3, #col-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+    .main {
+        width: 100%;
+    }
+    #row-header, #col-header {
+        width: 100%;
+    }
+    #col-2-3, #col-1-3, #col-mdl-1-3, #col-md-1-3, #col-mdr-1-3, #col-1 {
+        width: 100%;
+    }
+}
