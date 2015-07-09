@@ -5,7 +5,7 @@
 .container {
     margin: 0 auto;
     width: 1024px;
-    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .header {
@@ -40,7 +40,7 @@ h1.sub-content-heading {
     text-align: center;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (orientation: landscape) and (max-width: 1023px) {
     .container {
         width: 100%;
     }
@@ -54,7 +54,7 @@ h1.sub-content-heading {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px), (max-device-width: 640px) {
     .container {
         width: 100%;
     }
@@ -67,10 +67,18 @@ h1.sub-content-heading {
     .sub-content {
         width: 100%;
     }
+
+    .header {
+        padding: 20px 10px;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), (max-device-width: 320px) {
     .container {
         width: 320px;
+    }
+
+    .header {
+        padding: 20px 10px;
     }
 }
