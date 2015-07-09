@@ -1,5 +1,20 @@
-@import "../bower_components/bootstrap/dist/css/bootstrap.css";
-@import "../bower_components/bootstrap/dist/css/bootstrap-theme.css";
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../assets/fonts/josefin-sans/josefinsans-light-webfont.eot");
+    src: url("../assets/fonts/josefin-sans/josefinsans-light-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/josefin-sans/josefinsans-light-webfont.woff") format('woff'),
+    url("../assets/fonts/josefin-sans/josefinsans-light-webfont.ttf") format('truetype');
+}
+
+html {
+    background: rgba(192, 192, 192, 0.5);
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: "Josefin Sans";
+}
 
 .navbar-header {
     background: steelblue;
@@ -42,4 +57,10 @@ img {
     left: 50%;
     right: 1%;
     background: aquamarine;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 5ex;
 }
