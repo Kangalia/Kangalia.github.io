@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/angular.css">
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../javascripts/controllers/angularone.js"></script>
+</head>
+<body>
+<div class="main" ng-app="myApp">
+    <h1>Data Binding, Module, Scope, Controllers</h1>
+
+    <div ng-controller="MyController">
+        <input type="text" ng-model="person.fname" value="" placeholder="First Name">
+        <input type="text" ng-model="person.lname" value="" placeholder="Last Name">
+        <input type="text" ng-model="person.email" value="" placeholder="E-mail address">
+
+        <h1>Hello {{person.fname}} {{person.lname}}!</h1>
+
+        <h1>Your email address is: {{person.email}}.</h1>
+    </div>
+</div>
+</body>
+</html>
