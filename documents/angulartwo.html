@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Documents</title>
+    <link rel="stylesheet" href="../stylesheets/angular.css">
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../javascripts/controllers/angulartwo.js"></script>
+</head>
+<body ng-app="FormExample">
+<div class="main">
+    <div class="page-header">
+        <h1>Expressions, Filters and Form Validation</h1>
+    </div>
+    <section>
+        <header>
+            <h2>Sample Form</h2>
+        </header>
+        <div class="container" ng-controller="FormController">
+            <div class="row">
+                <div class="col-sm-6">
+                    <form name="userForm" ng-submit="submitForm()" novalidate>
+                        <div class="form-group">
+                            <label for="firstname">First Name: </label>
+                            <input id="firstname" type="text" name="fname" ng-model="user.fname" class="form-control"
+                                   ng-maxlength="20" required autofocus/>
+
+                            <div class="error"
+                                 ng-show="userForm.fname.$dirty && userForm.fname.$invalid && !userForm.fname.$pristine
+                                 && !userForm.fname.$focused">
+                                <small ng-messages="userForm.fname.$error" class="help-block">
+                                    <p ng-message="required"> Your first name is required. </p>
+
+                                    <p ng-message="maxlength"> Your name cannot be longer than 20 characters. </p>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname">Last Name: </label>
+                            <input id="lastname" type="text" name="lname" class="form-control" ng-model="user.lname"
+                                   ng-maxlength="20"/>
+
+                            <div class="error"
+                                 ng-show="userForm.lname.$dirty && userForm.lname.$invalid && !userForm.lname.$pristine
+                                 && !userForm.lname.$focused">
+                                <small ng-messages="userForm.lname.$error" class="help-block">
+                                    <p ng-message="maxlength"> Your name cannot be longer than 20 characters. </p>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Username: </label>
+                            <input id="username" type="text" name="username" class="form-control"
+                                   ng-model="user.username"
+                                   ng-minlength="3" ng-maxlength="8" required/>
+
+                            <div class="error"
+                                 ng-show="userForm.username.$dirty && userForm.username.$invalid && !userForm.username.$pristine
+                                 && !userForm.username.$focused">
+                                <small ng-messages="userForm.username.$error" class="help-block">
+                                    <p ng-message="required"> Your username is required. </p>
+
+                                    <p ng-message="maxlength"> Your username cannot be longer than 8 characters. </p>
+
+                                    <p ng-message="minlength"> Your username cannot be shorter than 3 characters. </p>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input id="email" type="text" name="email" class="form-control" ng-model="user.email"
+                                   ng-maxlength="30" ng-pattern="/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/" required/>
+
+                            <div class="error"
+                                 ng-show="userForm.email.$dirty && userForm.email.$invalid && !userForm.email.$pristine
+                                 && !userForm.email.$focused">
+                                <small ng-messages="userForm.email.$error" class="help-block">
+                                    <p ng-message="required"> Your email is required. </p>
+
+                                    <p ng-message="maxlength"> Your name cannot be longer than 30 characters. </p>
+
+                                    <p ng-message="email"> You have entered an invalid email </p>
+
+                                    <p ng-message="pattern"> You have entered an email with an invalid pattern</p>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password: </label>
+                            <input id="password" type="password" name="password" class="form-control" ng-maxlength="20"
+                                   ng-model="user.password" ng-minlength="8" required/>
+
+                            <div class="error"
+                                 ng-show="userForm.password.$dirty && userForm.password.$invalid && !userForm.password.$pristine
+                                 && !userForm.password.$focused">
+                                <small ng-messages="userForm.password.$error" class="help-block">
+                                    <p ng-message="required"> Your password is required. </p>
+
+                                    <p ng-message="minlength"> Your password should not be shorter than 8 characters
+                                        long. </p>
+
+                                    <p ng-message="maxlength"> Your password should not be longer than 20 characters
+                                        long. </p>
+
+                                    <p ng-message="password"> You have entered a password with an invalid pattern</p>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="retypepass">Retype Password: </label>
+                            <input id="retypepass" type="password" name="pass" class="form-control" ng-minlength="3"
+                                   ng-model="user.secondpass" ng-maxlength="8"/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

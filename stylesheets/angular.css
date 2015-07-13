@@ -1,0 +1,51 @@
+@import "../bower_components/bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    src: url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.eot");
+    src: url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.woff") format('woff'),
+    url("../assets/fonts/josefin-sans/josefinsans-bold-webfont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/roboto/roboto-regular-webfont.eot");
+    src: url("../assets/fonts/roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/roboto/roboto-regular-webfont.woff") format('woff'),
+    url("../assets/fonts/roboto/roboto-regular-webfont.ttf") format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: "Roboto", "sans-serif";
+    font-size: 1rem;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main > section > div > form {
+    width: 100%;
+    background: rgba(192, 192, 192, 0.1);
+}
+
+form {
+    font-size: 2.5ex;
+}
+
+.error {
+    background: rgba(255,0, 0, 01);
+    padding: 0.5ex 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 3px 0;
+}
+
+.help-block {
+    color: white;
+}
