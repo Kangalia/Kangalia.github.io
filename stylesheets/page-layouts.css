@@ -1,0 +1,56 @@
+@import "../bower_components/bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-family: "robotoregular";
+    src: url("../assets/fonts/roboto/roboto-regular-webfont.eot");
+    src: url("../assets/fonts/roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/roboto/roboto-regular-webfont.woff") format('woff'),
+    url("../assets/fonts/roboto/roboto-regular-webfont.woff2") format('woff2'),
+    url("../assets/fonts/roboto/roboto-regular-webfont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "robotomedium";
+    src: url("../assets/fonts/roboto/roboto-medium-webfont.eot");
+    src: url("../assets/fonts/roboto/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/roboto/roboto-medium-webfont.woff") format('woff'),
+    url("../assets/fonts/roboto/roboto-medium-webfont.woff2") format('woff2'),
+    url("../assets/fonts/roboto/roboto-medium-webfont.ttf") format('truetype');
+}
+
+html {
+    transition-duration: 1000ms;
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+}
+
+.row > div[class^="col-lg-9 col-md-9"] > ul {
+    float: right;
+    font-family: robotomedium;
+    background: rgba(0, 0, 0, 0.5);
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.row > div[class^="col-lg-9 col-md-9"] > ul > li{
+    text-align: center;
+    padding: 1rem 2rem;
+    display:inline-block;
+}
+
+.row > div[class^="col-lg-9 col-md-9"] > ul > li > a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.row > div[class^="col-lg-9 col-md-9"] > ul > li:hover{
+    background: rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+.body {
+    font-family: robotoregular;
+    margin-top: 40px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular Documents</title>
+    <link rel="stylesheet" href="../stylesheets/angular.css">
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../javascripts/angularfour.js"></script>
+</head>
+<body ng-app="signUpApp">
+<section class="main">
+    <div class="page-header">
+        <h1>Using Angular Directives</h1>
+    </div>
+    <div ng-controller="signUpController as c">
+        <form with-errors name="signUpForm" ng-submit="c.signup(c.user)" novalidate>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="username">Username:</label>
+                    <input id="username" class="form-control" name="username" type="text" ng-model="c.user.username" required/>
+                    <fielderrors for="username"></fielderrors>
+
+                    <label for="password">Password:</label>
+                    <input id="password" class="form-control" name="password" type="password" ng-model="c.user.password" required/>
+                    <fielderrors for="password"></fielderrors>
+                    <br />
+                    <button ng-disabled="signUpForm.$invalid" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+
+</html>
