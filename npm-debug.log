@@ -1,0 +1,292 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'angular-data-table' ]
+2 info using npm@2.9.1
+3 info using node@v0.13.0-pre
+4 verbose install initial load of /home/kangalia/SIL/Kangalia.github.io/package.json
+5 verbose installManyTop reading scoped package data from /home/kangalia/SIL/Kangalia.github.io/node_modules/angular/package.json
+6 verbose installManyTop reading scoped package data from /home/kangalia/SIL/Kangalia.github.io/node_modules/angularjs/package.json
+7 verbose installManyTop reading scoped package data from /home/kangalia/SIL/Kangalia.github.io/node_modules/jquery/package.json
+8 verbose installManyTop reading scoped package data from /home/kangalia/SIL/Kangalia.github.io/node_modules/ngmin/package.json
+9 verbose installManyTop reading scoped package data from /home/kangalia/SIL/Kangalia.github.io/node_modules/ui-router/package.json
+10 verbose readDependencies loading dependencies from /home/kangalia/SIL/Kangalia.github.io/package.json
+11 silly cache add args [ 'angular-data-table', null ]
+12 verbose cache add spec angular-data-table
+13 silly cache add parsed spec { raw: 'angular-data-table',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'angular-data-table',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: '*',
+13 silly cache add   type: 'range' }
+14 silly addNamed angular-data-table@*
+15 verbose addNamed "*" is a valid semver range for angular-data-table
+16 silly addNameRange { name: 'angular-data-table', range: '*', hasData: false }
+17 silly mapToRegistry name angular-data-table
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/angular-data-table
+21 verbose addNameRange registry:https://registry.npmjs.org/angular-data-table not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/angular-data-table
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 09:27:29
+25 verbose request id 44820adb69cf5535
+26 verbose etag "C1OLSHRGRGDPIU66FR86H2FN8"
+27 http request GET https://registry.npmjs.org/angular-data-table
+28 http 304 https://registry.npmjs.org/angular-data-table
+29 silly get cb [ 304,
+29 silly get   { date: 'Wed, 22 Jul 2015 06:27:30 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     'cache-control': 'max-age=60',
+29 silly get     etag: '"C1OLSHRGRGDPIU66FR86H2FN8"',
+29 silly get     age: '17',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-lhr6326-LHR',
+29 silly get     'x-cache': 'HIT',
+29 silly get     'x-cache-hits': '1',
+29 silly get     'x-timer': 'S1437546450.193945,VS0,VE0',
+29 silly get     vary: 'Accept' } ]
+30 verbose etag https://registry.npmjs.org/angular-data-table from cache
+31 verbose get saving angular-data-table to /root/.npm/registry.npmjs.org/angular-data-table/.cache.json
+32 silly addNameRange number 2 { name: 'angular-data-table', range: '*', hasData: true }
+33 silly addNameRange versions [ 'angular-data-table',
+33 silly addNameRange   [ '0.0.1',
+33 silly addNameRange     '0.0.2',
+33 silly addNameRange     '0.0.3',
+33 silly addNameRange     '0.0.4',
+33 silly addNameRange     '0.0.5',
+33 silly addNameRange     '0.0.6',
+33 silly addNameRange     '0.0.8',
+33 silly addNameRange     '0.0.11',
+33 silly addNameRange     '0.0.12',
+33 silly addNameRange     '0.0.13',
+33 silly addNameRange     '0.0.14',
+33 silly addNameRange     '0.0.16',
+33 silly addNameRange     '0.0.17',
+33 silly addNameRange     '0.0.18',
+33 silly addNameRange     '0.0.19',
+33 silly addNameRange     '0.0.20',
+33 silly addNameRange     '0.0.21',
+33 silly addNameRange     '0.0.22',
+33 silly addNameRange     '0.0.23',
+33 silly addNameRange     '0.0.24',
+33 silly addNameRange     '0.0.25',
+33 silly addNameRange     '0.0.26',
+33 silly addNameRange     '0.0.27',
+33 silly addNameRange     '0.0.28',
+33 silly addNameRange     '0.0.29',
+33 silly addNameRange     '0.0.31',
+33 silly addNameRange     '0.0.35',
+33 silly addNameRange     '0.1.0',
+33 silly addNameRange     '0.1.3' ] ]
+34 silly addNamed angular-data-table@0.1.3
+35 verbose addNamed "0.1.3" is a plain semver version for angular-data-table
+36 silly cache afterAdd angular-data-table@0.1.3
+37 verbose afterAdd /root/.npm/angular-data-table/0.1.3/package/package.json not in flight; writing
+38 verbose afterAdd /root/.npm/angular-data-table/0.1.3/package/package.json written
+39 silly install resolved [ { name: 'angular-data-table',
+39 silly install resolved     title: 'AngularJS Data-Table',
+39 silly install resolved     description: 'AngularJS data table directive written in ES6.',
+39 silly install resolved     version: '0.1.3',
+39 silly install resolved     repository:
+39 silly install resolved      { type: 'git',
+39 silly install resolved        url: 'git+ssh://git@github.com/Swimlane/angular-data-table.git',
+39 silly install resolved        github: 'http://github.com/Swimlane/angular-data-table.git' },
+39 silly install resolved     main: './release/dataTable.js',
+39 silly install resolved     homepage: 'http://swimlane.com/',
+39 silly install resolved     author:
+39 silly install resolved      { name: 'Swimlane',
+39 silly install resolved        email: 'austin@swimlane.com',
+39 silly install resolved        url: 'http://swimlane.com/' },
+39 silly install resolved     licenses: [ [Object] ],
+39 silly install resolved     devDependencies:
+39 silly install resolved      { 'browser-sync': '^2.7.2',
+39 silly install resolved        del: '^1.2.0',
+39 silly install resolved        gulp: '^3.8.11',
+39 silly install resolved        'gulp-babel': '^5.1.0',
+39 silly install resolved        'gulp-changed': '^1.2.1',
+39 silly install resolved        'gulp-header': '^1.2.2',
+39 silly install resolved        'gulp-less': '^3.0.3',
+39 silly install resolved        'gulp-ng-annotate': '^1.0.0',
+39 silly install resolved        'gulp-plumber': '^1.0.1',
+39 silly install resolved        'gulp-rename': '^1.2.2',
+39 silly install resolved        'gulp-replace': '^0.5.3',
+39 silly install resolved        'gulp-uglify': '^1.2.0',
+39 silly install resolved        rollup: '^0.7.8',
+39 silly install resolved        'run-sequence': '^1.1.0',
+39 silly install resolved        'systemjs-builder': '^0.11.3',
+39 silly install resolved        'vinyl-paths': '^1.0.0' },
+39 silly install resolved     dependencies: {},
+39 silly install resolved     jspm:
+39 silly install resolved      { directories: {},
+39 silly install resolved        dependencies: [Object],
+39 silly install resolved        devDependencies: [Object] },
+39 silly install resolved     scripts: { postinstall: 'jspm install' },
+39 silly install resolved     gitHead: 'd5bb95cffa7377a7a9eaab298177f9b6b9861fc7',
+39 silly install resolved     bugs: { url: 'https://github.com/Swimlane/angular-data-table/issues' },
+39 silly install resolved     _id: 'angular-data-table@0.1.3',
+39 silly install resolved     _shasum: 'fd96a8133fd5887509accebf0c83ccb1a646801b',
+39 silly install resolved     _from: 'angular-data-table@*',
+39 silly install resolved     _npmVersion: '2.8.4',
+39 silly install resolved     _nodeVersion: '0.12.2',
+39 silly install resolved     _npmUser: { name: 'amcdnl', email: 'amcdaniel2@gmail.com' },
+39 silly install resolved     dist:
+39 silly install resolved      { shasum: 'fd96a8133fd5887509accebf0c83ccb1a646801b',
+39 silly install resolved        tarball: 'http://registry.npmjs.org/angular-data-table/-/angular-data-table-0.1.3.tgz' },
+39 silly install resolved     maintainers: [ [Object] ],
+39 silly install resolved     directories: {},
+39 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-data-table/-/angular-data-table-0.1.3.tgz',
+39 silly install resolved     readme: 'ERROR: No README data found!' } ]
+40 info install angular-data-table@0.1.3 into /home/kangalia/SIL/Kangalia.github.io
+41 info installOne angular-data-table@0.1.3
+42 verbose installOne of angular-data-table to /home/kangalia/SIL/Kangalia.github.io not in flight; installing
+43 verbose lock using /root/.npm/_locks/angular-data-table-5fdbcfa38e179e28.lock for /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+44 silly install write writing angular-data-table 0.1.3 to /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+45 verbose unbuild node_modules/angular-data-table
+46 silly gentlyRm /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table is being purged from base /home/kangalia/SIL/Kangalia.github.io
+47 verbose gentlyRm don't care about contents; nuking /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+48 verbose tar unpack /root/.npm/angular-data-table/0.1.3/package.tgz
+49 verbose tar unpacking to /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+50 silly gentlyRm /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table is being purged
+51 verbose gentlyRm don't care about contents; nuking /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm extractEntry config.js
+57 silly gunzTarPerm extractEntry gulpfile.js
+58 silly gunzTarPerm extractEntry demos/perf.html
+59 silly gunzTarPerm extractEntry demos/basic.html
+60 silly gunzTarPerm extractEntry demos/columnadd.html
+61 silly gunzTarPerm extractEntry demos/data/100.json
+62 silly gunzTarPerm extractEntry demos/data/columns.json
+63 silly gunzTarPerm extractEntry demos/data/complex-100000.json
+64 silly gunzTarPerm extractEntry demos/data/olympics.json
+65 silly gunzTarPerm extractEntry demos/empty.html
+66 silly gunzTarPerm extractEntry demos/expressive.html
+67 silly gunzTarPerm extractEntry demos/filters.html
+68 silly gunzTarPerm extractEntry demos/force.html
+69 silly gunzTarPerm extractEntry demos/greed.html
+70 silly gunzTarPerm extractEntry demos/grouping.html
+71 silly gunzTarPerm extractEntry demos/paging.html
+72 silly gunzTarPerm extractEntry demos/checkboxes.html
+73 silly gunzTarPerm extractEntry demos/pins.html
+74 silly gunzTarPerm extractEntry demos/scroll.html
+75 silly gunzTarPerm extractEntry demos/select.html
+76 silly gunzTarPerm extractEntry demos/slow.html
+77 silly gunzTarPerm extractEntry demos/sort.html
+78 silly gunzTarPerm extractEntry demos/tall.html
+79 silly gunzTarPerm extractEntry demos/templates.html
+80 silly gunzTarPerm extractEntry demos/tooltip.html
+81 silly gunzTarPerm extractEntry demos/tree.html
+82 silly gunzTarPerm extractEntry demos/virtual.html
+83 silly gunzTarPerm extractEntry .editorconfig
+84 silly gunzTarPerm extractEntry index.html
+85 silly gunzTarPerm extractEntry release/dataTable.cjs.js
+86 silly gunzTarPerm extractEntry release/dataTable.es6.js
+87 silly gunzTarPerm extractEntry release/dataTable.helpers.js
+88 silly gunzTarPerm extractEntry release/dataTable.helpers.min.js
+89 silly gunzTarPerm extractEntry release/dataTable.js
+90 silly gunzTarPerm extractEntry release/dataTable.css
+91 silly gunzTarPerm extractEntry release/material.css
+92 silly gunzTarPerm extractEntry .eslintrc
+93 silly gunzTarPerm extractEntry src/DataTableController.js
+94 silly gunzTarPerm extractEntry src/DataTableDirective.js
+95 silly gunzTarPerm extractEntry src/dataTable.js
+96 silly gunzTarPerm extractEntry src/defaults.js
+97 silly gunzTarPerm extractEntry src/components/body/BodyController.js
+98 silly gunzTarPerm extractEntry src/components/body/CellController.js
+99 silly gunzTarPerm extractEntry src/components/body/CellDirective.js
+100 silly gunzTarPerm extractEntry src/components/body/GroupRowController.js
+101 silly gunzTarPerm extractEntry src/components/body/BodyDirective.js
+102 silly gunzTarPerm extractEntry src/components/body/RowController.js
+103 silly gunzTarPerm extractEntry src/components/body/RowDirective.js
+104 silly gunzTarPerm extractEntry src/components/body/ScrollerController.js
+105 silly gunzTarPerm extractEntry src/components/body/ScrollerDirective.js
+106 silly gunzTarPerm extractEntry src/components/body/scrollHelper.js
+107 silly gunzTarPerm extractEntry src/components/body/GroupRowDirective.js
+108 silly gunzTarPerm extractEntry src/components/footer/FooterController.js
+109 silly gunzTarPerm extractEntry src/components/footer/FooterDirective.js
+110 silly gunzTarPerm extractEntry src/components/footer/PagerController.js
+111 silly gunzTarPerm extractEntry src/components/footer/PagerDirective.js
+112 silly gunzTarPerm extractEntry src/components/header/HeaderCellController.js
+113 silly gunzTarPerm extractEntry src/components/header/HeaderCellDirective.js
+114 silly gunzTarPerm extractEntry src/components/header/HeaderController.js
+115 silly gunzTarPerm extractEntry src/components/header/HeaderDirective.js
+116 silly gunzTarPerm extractEntry src/components/header/ResizableDirective.js
+117 silly gunzTarPerm extractEntry src/components/header/SortableDirective.js
+118 silly gunzTarPerm extractEntry src/components/menu/MenuController.js
+119 silly gunzTarPerm extractEntry src/components/menu/MenuDirective.js
+120 silly gunzTarPerm extractEntry src/components/menu/menu.js
+121 silly gunzTarPerm extractEntry src/components/menu/context/ContextMenuController.js
+122 silly gunzTarPerm extractEntry src/components/menu/context/ContextMenuDirective.js
+123 silly gunzTarPerm extractEntry src/components/menu/context/contextMenu.js
+124 silly gunzTarPerm extractEntry src/components/menu/dropdown/DropdownController.js
+125 silly gunzTarPerm extractEntry src/components/menu/dropdown/DropdownDirective.js
+126 silly gunzTarPerm extractEntry src/components/menu/dropdown/DropdownMenuDirective.js
+127 silly gunzTarPerm extractEntry src/components/menu/dropdown/DropdownToggleDirective.js
+128 silly gunzTarPerm extractEntry src/components/menu/dropdown/dropdown.js
+129 silly gunzTarPerm extractEntry src/components/menu/menu.less
+130 silly gunzTarPerm extractEntry src/components/popover/PopoverDirective.js
+131 silly gunzTarPerm extractEntry src/components/popover/PopoverRegistry.js
+132 silly gunzTarPerm extractEntry src/components/popover/PositionHelper.js
+133 silly gunzTarPerm extractEntry src/components/popover/popover.js
+134 silly gunzTarPerm extractEntry src/components/popover/popover.less
+135 silly gunzTarPerm extractEntry src/dataTable.less
+136 silly gunzTarPerm extractEntry src/themes/material.less
+137 silly gunzTarPerm extractEntry src/utils/keys.js
+138 silly gunzTarPerm extractEntry src/utils/math.js
+139 silly gunzTarPerm extractEntry src/utils/polyfill.js
+140 silly gunzTarPerm extractEntry src/utils/throttle.js
+141 silly gunzTarPerm extractEntry src/utils/translate.js
+142 silly gunzTarPerm extractEntry src/utils/utils.js
+143 silly gunzTarPerm extractEntry src/utils/vendorPrefixes.js
+144 verbose write writing to /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table/package.json
+145 info preinstall angular-data-table@0.1.3
+146 verbose readDependencies loading dependencies from /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table/package.json
+147 verbose readDependencies loading dependencies from /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table/package.json
+148 silly install resolved []
+149 verbose about to build /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+150 info build /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+151 info linkStuff angular-data-table@0.1.3
+152 silly linkStuff angular-data-table@0.1.3 has /home/kangalia/SIL/Kangalia.github.io/node_modules as its parent node_modules
+153 verbose linkBins angular-data-table@0.1.3
+154 verbose linkMans angular-data-table@0.1.3
+155 verbose rebuildBundles angular-data-table@0.1.3
+156 info install angular-data-table@0.1.3
+157 info postinstall angular-data-table@0.1.3
+158 verbose unsafe-perm in lifecycle false
+159 info angular-data-table@0.1.3 Failed to exec postinstall script
+160 verbose unlock done using /root/.npm/_locks/angular-data-table-5fdbcfa38e179e28.lock for /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+161 verbose stack Error: Exit status 1
+161 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+161 verbose stack     at EventEmitter.emit (events.js:110:17)
+161 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+161 verbose stack     at ChildProcess.emit (events.js:110:17)
+161 verbose stack     at maybeClose (child_process.js:1000:16)
+161 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1072:5)
+162 verbose pkgid angular-data-table@0.1.3
+163 verbose cwd /home/kangalia/SIL/Kangalia.github.io
+164 error Linux 3.13.0-39-generic
+165 error argv "node" "/usr/local/bin/npm" "install" "angular-data-table"
+166 error node v0.13.0-pre
+167 error npm  v2.9.1
+168 error code ELIFECYCLE
+169 error angular-data-table@0.1.3 postinstall: `jspm install`
+169 error Exit status 1
+170 error Failed at the angular-data-table@0.1.3 postinstall script 'jspm install'.
+170 error This is most likely a problem with the angular-data-table package,
+170 error not with npm itself.
+170 error Tell the author that this fails on your system:
+170 error     jspm install
+170 error You can get their info via:
+170 error     npm owner ls angular-data-table
+170 error There is likely additional logging output above.
+171 verbose exit [ 1, true ]
+172 verbose unbuild node_modules/angular-data-table
+173 info preuninstall angular-data-table@0.1.3
+174 info uninstall angular-data-table@0.1.3
+175 verbose unbuild rmStuff angular-data-table@0.1.3 from /home/kangalia/SIL/Kangalia.github.io/node_modules
+176 info postuninstall angular-data-table@0.1.3
+177 silly gentlyRm /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table is being purged from base /home/kangalia/SIL/Kangalia.github.io
+178 verbose gentlyRm don't care about contents; nuking /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+179 silly vacuum-fs purging /home/kangalia/SIL/Kangalia.github.io/node_modules/angular-data-table
+180 silly vacuum-fs quitting because other entries in /home/kangalia/SIL/Kangalia.github.io/node_modules
